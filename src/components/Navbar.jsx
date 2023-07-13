@@ -8,7 +8,7 @@ import resume from '../jennifer-scott-2023.pdf';
 const Navigation = () => {
     
     return (
-            <Navbar className="bg-[#fee1c7]" variant="light" expand="lg">
+            <Navbar className="navbar" style={{backgroundColor: "#fee1c7"}} variant="light" expand="lg">
                 <Container>
                     <Navbar.Brand href="#">
                         <img src={logo} alt="my logo" style={{ width: 30, height: 30 }} />
