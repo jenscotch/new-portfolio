@@ -1,0 +1,16 @@
+i {
+    font-size: 100px;
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.text {
+    color: #33032f;
+    text-align: center;
+    font-size: 26px;
+}
+
+.bg {
+    margin-bottom: 20px;
+}
