@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
     
     return (
-        <div name="home" className="flex-wrap h-screen w-full" style={{background: "#33032f"}}>
+        <div name="home" className="h-screen w-full" style={{background: "#33032f"}}>
             <div className="container">
                 <div className="name">
                     <h1 className="name-one">Jennifer </h1>
@@ -18,7 +18,7 @@ const Home = () => {
                     <h1 className="name-three">Scott</h1>
                 </div>
                 </div>
-        <div name="home" className="flex-wrap h-screen w-full" style={{background: "#33032f"}}>
+        <div name="home" className="h-screen w-full" style={{background: "#33032f"}}>
             <div className="px-4">
                 <h5 className="paragraph">
                     Hello, world! <br/> 

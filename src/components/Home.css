@@ -6,7 +6,6 @@
 .name {
     font-family: Rubik;
     margin: 20px;
-    flex-shrink: 3;
     position: relative;
     justify-content: center;
     text-shadow: 0px 0px #DF6C53, -1px 1px #DF6C53, -2px 2px #DF6C53, -3px 3px #DF6C53, -4px 4px #DF6C53, -5px 5px #DF6C53, -6px 6px #DF6C53, -7px 7px #DF6C53, -8px 8px #DF6C53, -9px 9px #DF6C53, -10px 10px #DF6C53, -11px 11px #DF6C53, -12px 12px #DF6C53, -13px 13px #DF6C53, -14px 14px #DF6C53, -15px 15px #DF6C53, -16px 16px #DF6C53, -17px 17px #DF6C53, -18px 18px #DF6C53, -19px 19px #DF6C53, -20px 20px #DF6C53, -21px 21px #DF6C53, -22px 22px #DF6C53, -23px 23px #DF6C53, -24px 24px #DF6C53, -25px 25px #DF6C53, -26px 26px #DF6C53, -27px 27px #DF6C53, -28px 28px #DF6C53, -29px 29px #DF6C53, -30px 30px #DF6C53, -31px 31px #DF6C53, -32px 32px #DF6C53, -33px 33px #DF6C53, -34px 34px #DF6C53, -35px 35px #DF6C53, -36px 36px #DF6C53, -37px 37px #DF6C53, -38px 38px #DF6C53, -39px 39px #DF6C53, -40px 40px #DF6C53, -41px 41px #DF6C53, -42px 42px #DF6C53, -43px 43px #DF6C53, -44px 44px #DF6C53, -45px 45px #DF6C53, -46px 46px #DF6C53, -47px 47px #DF6C53, -48px 48px #DF6C53, -49px 49px #DF6C53, -50px 50px #DF6C53;
@@ -47,6 +46,17 @@
     float: right;
     position: relative;
 }
+
+  @media screen and (max-width: 600px) {
+    .name .name-one .name-two .name-three {
+      display: flex;
+      flex-direction: column;
+    }
+    .paragraph {
+      margin-top: 450px;
+      max-width: 100%;
+    }
+  }
 
 
   @keyframes color {
