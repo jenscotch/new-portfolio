@@ -5,7 +5,7 @@ import resume from '../jennifer-scott-2023.pdf';
 
 const AboutMe = () => {
     return (
-        <div name="portfolio" className="box">
+        <div name="portfolio" className="box" id="about">
 
         <div name="home" className="h-screen w-full">
             <div className="px-4">

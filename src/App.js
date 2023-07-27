@@ -49,18 +49,18 @@ function App() {
     <div>
       <BrowserRouter>
         <div className={`App ${theme}`}>
-      <Navigation />
       {/*light/dark mode toggle*/}
           <label className="toggle" >
             <input type="checkbox" className="toggle-checkbox" onClick={toggleTheme}/>
             <div className="toggle-switch"/>
             <span className="toggle-label" />
           </label>
+      <Navigation />
       <header className="App-header">
-        <Home />
-        <AboutMe />
-        <Portfolio />
-        <Contact />
+        <Home id="home"/>
+        <AboutMe id="about"/>
+        <Portfolio id="portfolio"/>
+        <Contact id="contact"/>
         <InfiniteScroll
           dataLength={state.items.length}
           next={fetchMoreData}

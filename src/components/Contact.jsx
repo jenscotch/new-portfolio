@@ -35,7 +35,7 @@ const Contact = () => {
 
     return (
 
-        <div className="container mt-5">
+        <div className="container mt-5" id="contact">
             <h2 className="mb-3" style={{fontFamily: "Montserrat", fontWeight: "bold" }}>Contact me!</h2>
             <form ref={form} onSubmit={handleSubmit}>
                 <div className="mb-3">
