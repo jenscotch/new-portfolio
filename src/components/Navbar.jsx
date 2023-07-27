@@ -16,16 +16,16 @@ const Navigation = () => {
                     </Navbar.Brand>
     
                     <Nav className="ml-auto flex-row-3">
-                        <Link to="home" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer"}}>
+                        <Link to="home" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer", padding: 5}}>
                             Home 
                         </Link>
-                        <Link to="about" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer"}}>
+                        <Link to="about" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer", padding: 5}}>
                             About
                         </Link>
-                        <Link to="portfolio" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer"}}>
+                        <Link to="portfolio" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer", padding: 5}}>
                             Work
                         </Link>
-                        <Link to="contact" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer"}}>
+                        <Link to="contact" smooth={true} spy={true} activeClass="active" style={{cursor: "pointer",  padding: 5}}>
                             Contact
                         </Link>
                     </Nav>
