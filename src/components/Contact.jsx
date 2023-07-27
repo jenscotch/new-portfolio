@@ -36,28 +36,28 @@ const Contact = () => {
     return (
 
         <div className="container mt-5">
-            <h2 className="mb-3" style={{ color: "#fee1c7", fontFamily: "Roboto Mono", fontWeight: "bold" }}>Contact me!</h2>
+            <h2 className="mb-3" style={{fontFamily: "Montserrat", fontWeight: "bold" }}>Contact me!</h2>
             <form ref={form} onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label className="form-label" htmlFor="name" style={{ color: "#fee1c7", fontFamily: "Roboto Mono" }}>
+                    <label className="form-label" htmlFor="name" style={{fontFamily: "Montserrat" }}>
                         Name
                     </label>
-                    <input className="form-control opacity-50" type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+                    <input className="form-control" type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label" htmlFor="email" style={{ color: "#fee1c7", fontFamily: "Roboto Mono" }}>
+                    <label className="form-label" htmlFor="email" style={{fontFamily: "Montserrat" }}>
                         Email
                     </label>
                     <br />
-                    <input type="form-control opacity-50" id="email" name="email" value={formData.email} onChange={handleChange} required />
+                    <input type="form-control" id="email" name="email" value={formData.email} onChange={handleChange} required />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label" htmlFor="message" style={{ color: "#fee1c7", fontFamily: "Roboto Mono"}}>
+                    <label className="form-label" htmlFor="message" style={{fontFamily: "Montserrat"}}>
                         Message
                     </label>
-                    <textarea className="form-control opacity-50" id="message" name="message" value={formData.message} onChange={handleChange} required />
+                    <textarea className="form-control" id="message" name="message" value={formData.message} onChange={handleChange} required />
                 </div>
-                <button className="btn btn-danger" type="submit">
+                <button className="btn" style={{backgroundColor: "#b45596d1", color: "#fff"}} type="submit">
                     {formStatus}
                 </button>
             </form>

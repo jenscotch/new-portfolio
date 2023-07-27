@@ -10,12 +10,10 @@ const Portfolio = () => {
     return (
 
         <div className="projects-container">
-		<br />
-        <br />
 		<div className="projects-grid1">
             <div className="projects-text">
                 <h4 className="text-h4">
-                <a className="btn" href="https://github.com/jenscotch/myFlix-client" style={{fontSize: "24px", color: "#fee1c7"}}>Movie App</a>
+                <a className="btn" href="https://github.com/jenscotch/myFlix-client" style={{fontSize: "24px", fontWeight: "bold"}}>Movie App</a>
                 </h4>
                 <br />
                 <p>A Movie App built with React that allows a user to sign-up for an account, log into said account, and add movies to their account from a list of movies generated from a self-built API.</p>
@@ -34,7 +32,7 @@ const Portfolio = () => {
             </div>
             <div className="projects-text">
                 <h4 className="text-h4">
-                    <a className="btn" href="https://github.com/jenscotch/pokemon-app" style={{fontSize: "24px", color: "#fee1c7"}}>Pokedex App</a>
+                    <a className="btn" href="https://github.com/jenscotch/pokemon-app" style={{fontSize: "24px", fontWeight: "bold"}}>Pokedex App</a>
                 </h4>
                 <br />
                 <p>A Pokedex App built mostly with JavaScript that utilizes a Pokemon API to gather information about various Pokemon.</p>
@@ -43,7 +41,7 @@ const Portfolio = () => {
         <div className="projects-grid3">
             <div className="projects-text">
                 <h4 className="text-h4">
-                    <a className="btn" href="https://github.com/jenscotch/meet" style={{fontSize: "24px", color: "#fee1c7"}}>Meet App</a>
+                    <a className="btn" href="https://github.com/jenscotch/meet" style={{fontSize: "24px", fontWeight: "bold"}}>Meet App</a>
                 </h4>
                 <br />
                 <p>An app built with React using test-driven development to fetch events from the Google Calendar API. The user can sign in using Google authentication, find events in a specific city, choose the number of events they want to see, and see two different types of data graphs based off of their filtered choices.</p>

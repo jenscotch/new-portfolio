@@ -1,6 +1,6 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
@@ -11,12 +11,25 @@ import { BrowserRouter } from 'react-router-dom';
 import Github from './icons/icons8-github.svg';
 import LinkedIn from './icons/icons8-linkedin.svg';
 
+
 function App() {
 
   const [state, setState] = useState({ items: []});
   const [extraComponents] = useState([]);
   const [count, setCount] = useState(0);
   const [hasMore, setHasMore] = useState(true);
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
 
   const fetchMoreData = () => {
@@ -24,7 +37,6 @@ function App() {
       setHasMore(false);
       return;
     }
-    //console.log('extraC', extraComponents[count]);
     setTimeout(() => {
       setState({
         items: state.items.concat([extraComponents[count]])
@@ -36,12 +48,18 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <div>
+        <div className={`App ${theme}`}>
       <Navigation />
-      <header className="App-header" style={{ backgroundColor: "#33032f"}}>
+      {/*light/dark mode toggle*/}
+          <label className="toggle" >
+            <input type="checkbox" className="toggle-checkbox" onClick={toggleTheme}/>
+            <div className="toggle-switch"/>
+            <span className="toggle-label" />
+          </label>
+      <header className="App-header">
         <Home />
-        <Portfolio />
         <AboutMe />
+        <Portfolio />
         <Contact />
         <InfiniteScroll
           dataLength={state.items.length}
