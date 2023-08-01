@@ -60,7 +60,7 @@
 
 .project-image-wrapper {
     max-width: 50%;
-	padding: 4%;
+    padding: 20px;
 	position: relative;
 }
 
@@ -72,3 +72,8 @@
     color: #33032f;
   }
 
+@media only screen and (max-width: 280px) {
+    .projects-grid1 .projects-grid2 .projects-grid3 {
+        flex-direction: column;
+    }
+}
