@@ -3,11 +3,28 @@ import './AboutMe.css';
 import resume from '../jenniferscott-2023.pdf';
 
 
+function reveal() {
+    const reveals = document.querySelectorAll('.fade-in');
+
+    for (var i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+window.addEventListener('scroll', reveal);
+
 const AboutMe = () => {
     return (
         <div name="portfolio" className="box" id="about">
 
-        <div name="home" className="h-screen w-full">
+        <div name="home" className="h-screen w-full fade-in">
             <div className="px-4">
                 <h5 className="paragraph">
                     <b>My name is Jennifer Scott.</b> <br/><br/>
@@ -20,10 +37,10 @@ const AboutMe = () => {
                     <a className="btn" href="mailto:jennifer.scott9@yahoo.com" style={{fontSize: "18px"}}>Email</a>
                 </h5>
             </div>
-            </div>
+        </div>
 
-        <div className="flex flex-col justify-center h-full ">
-            <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div className="flex h-full fade-in skills">
+            <div >
             <div className="bg">
                 <i className="devicon-angularjs-plain" alt="Angular" title="Angular"></i>
                 <i className="devicon-bootstrap-plain" alt="Bootstrap" title="Bootstrap"></i>

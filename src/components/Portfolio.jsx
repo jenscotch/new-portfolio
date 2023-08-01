@@ -5,12 +5,28 @@ import pokemon from '../assets/pokemon.png';
 import meet from '../assets/meet.png';
 
 
+function reveal() {
+    const reveals = document.querySelectorAll('.fade-in');
+
+    for (var i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+window.addEventListener('scroll', reveal);
+
 const Portfolio = () => {
 
     return (
-
-        <div className="projects-container" id="portfolio">
-		<div className="projects-grid1">
+        <div id="portfolio">
+		<div className="projects-grid1 fade-in">
             <div className="projects-text">
                 <h4 className="text-h4">
                 <a className="btn" href="https://github.com/jenscotch/myFlix-client" style={{fontSize: "24px", fontWeight: "bold"}}>Movie App</a>
@@ -24,7 +40,7 @@ const Portfolio = () => {
                 </a>
 			</div>
         </div>
-        <div className="projects-grid2">
+        <div className="projects-grid2 fade-in">
 			<div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/pokemon-app">
 				    <img className="project-image" src={pokemon} alt="pokemon app"/>
@@ -38,7 +54,7 @@ const Portfolio = () => {
                 <p>A Pokedex App built mostly with JavaScript that utilizes a Pokemon API to gather information about various Pokemon.</p>
             </div>
         </div>
-        <div className="projects-grid3">
+        <div className="projects-grid3 fade-in">
             <div className="projects-text">
                 <h4 className="text-h4">
                     <a className="btn" href="https://github.com/jenscotch/meet" style={{fontSize: "24px", fontWeight: "bold"}}>Meet App</a>

@@ -15,6 +15,18 @@
     font-weight: bold;
 }
 
+.fade-in {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.25s all ease;
+}
+
+.fade-in.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .projects-grid1 {
 	display: flex;
     align-items: center;
@@ -38,7 +50,6 @@
     flex-basis: 40%;
 	border-radius: 5px;
 	box-shadow: 2px 4px 6px 0 #b45596d1;
-	transition: .3s ease-in-out 0s;
 }
 
 .project-image:hover {
@@ -60,3 +71,4 @@
 .light div {
     color: #33032f;
   }
+
