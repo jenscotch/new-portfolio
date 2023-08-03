@@ -25,14 +25,17 @@ window.addEventListener('scroll', reveal);
 const Portfolio = () => {
 
     return (
-        <div id="portfolio">
-		<div className="projects-grid1 fade-in">
-            <div className="projects-text">
-                <h4 className="text-h4">
-                <a className="btn" href="https://github.com/jenscotch/myFlix-client" style={{fontSize: "24px", fontWeight: "bold"}}>Movie App</a>
+    <div className="project-container fade-in">
+        <div className="project-card">
+		<div className="project-wrapper">
+            <div className="project-body">
+                <h4 className="project-name">
+                <a className="btn" alt="project button" href="https://jensmovieapp.netlify.app/" style={{fontSize: "24px", fontWeight: "bold"}}>Movie App</a>
                 </h4>
-                <br />
-                <p>A Movie App built with React that allows a user to sign-up for an account, log into said account, and add movies to their account from a list of movies generated from a self-built API.</p>
+                <p className="project-detail">A Movie App built using the MERN stack, that allows a user 
+                to sign-up for an account, log into said account, and add movies to their account. Users can also 
+                find out more information about movies, directors, and genres. Movie list provided from a list of 
+                movies generated from a self-built API.</p>
             </div>
 			<div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/myFlix-client">
@@ -40,32 +43,49 @@ const Portfolio = () => {
                 </a>
 			</div>
         </div>
-        <div className="projects-grid2 fade-in">
-			<div className="project-image-wrapper">
+        </div>
+
+
+
+        <div className="project-container fade-in">
+			<div className="project-card">
+            <div className="project-wrapper">
+                <div className="project-body">
+                <h4 className="project-name">
+                    <a className="btn" alt="project button" href="https://jenscotch.github.io/pokemon-app/" style={{fontSize: "24px", fontWeight: "bold"}}>Pokedex App</a>
+                </h4>
+                <p className="project-detail">A Pokedex App built with JavaScript that uses an external Pokemon API to gather information about the first 150 Pokemon.
+                Users can find out more information about a Pokemon and search for a particular Pokemon.</p>
+                </div>
+            <div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/pokemon-app">
 				    <img className="project-image" src={pokemon} alt="pokemon app"/>
                 </a>
             </div>
-            <div className="projects-text">
-                <h4 className="text-h4">
-                    <a className="btn" href="https://github.com/jenscotch/pokemon-app" style={{fontSize: "24px", fontWeight: "bold"}}>Pokedex App</a>
-                </h4>
-                <br />
-                <p>A Pokedex App built mostly with JavaScript that utilizes a Pokemon API to gather information about various Pokemon.</p>
+            </div>
             </div>
         </div>
-        <div className="projects-grid3 fade-in">
-            <div className="projects-text">
-                <h4 className="text-h4">
-                    <a className="btn" href="https://github.com/jenscotch/meet" style={{fontSize: "24px", fontWeight: "bold"}}>Meet App</a>
-                </h4>
-                <br />
-                <p>An app built with React using test-driven development to fetch events from the Google Calendar API. The user can sign in using Google authentication, find events in a specific city, choose the number of events they want to see, and see two different types of data graphs based off of their filtered choices.</p>
+
+
+
+        <div className="project-container fade-in">
+            <div className="project-card">
+                <div className="project-wrapper">
+                    <div className="project-body">
+                <h4 className="project-name">
+                    <a className="btn" alt="project button" href="https://jenscotch.github.io/meet/" style={{fontSize: "24px", fontWeight: "bold"}}>Meet App</a>
+                </h4> 
+                <p className="project-detail">Meet is a progressive web app with mobile capabilities, 
+                    developed using a test-driven development technique in React. 
+                    The app uses the Google Calendar API to fetch upcoming events, as well as Google Authentication to log in. 
+                    Users can filter events based on location and/or number of events.</p>
             </div>
 			<div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/meet">
 				<img className="project-image" src={meet} alt="meet app"/>
                 </a>
+            </div>
+            </div>
             </div>
 		</div>
         <br/>

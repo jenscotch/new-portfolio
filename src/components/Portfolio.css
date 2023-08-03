@@ -1,18 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
-.projects-text {
-    font-size: 18px;
-    font-family: Montserrat;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+.project-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
 }
 
-.text-h4 {
-    text-align: center;
-    font-size: 25px;
+.project-card {
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    transition: .5s;
+    border-radius: 5px;
+    position: relative;
+}
+
+.project-name {
+    font-family: Montserrat;
+    font-size: 2rem;
     font-weight: bold;
+}
+
+.project-detail {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 50px ;
+}
+
+.project-body .btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .fade-in {
@@ -27,27 +50,9 @@
     opacity: 1;
 }
 
-.projects-grid1 {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects-grid2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects-grid3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .project-image {
-    width: 100%;
-    flex-basis: 40%;
+    width: 90%;
+    justify-content: center;
 	border-radius: 5px;
 	box-shadow: 2px 4px 6px 0 #b45596d1;
 }
@@ -56,12 +61,12 @@
 	filter: brightness(.75);
     transform: scale(1.05);
 	box-shadow: 10px 10px 15px #b4559636;
+    transition: .3s;
 }
 
 .project-image-wrapper {
-    max-width: 50%;
+    width: 100%;
     padding: 20px;
-	position: relative;
 }
 
 .dark div a {
@@ -71,9 +76,3 @@
 .light div {
     color: #33032f;
   }
-
-@media only screen and (max-width: 280px) {
-    .projects-grid1 .projects-grid2 .projects-grid3 {
-        flex-direction: column;
-    }
-}
