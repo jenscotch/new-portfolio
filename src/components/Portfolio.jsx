@@ -36,6 +36,8 @@ const Portfolio = () => {
                 to sign-up for an account, log into said account, and add movies to their account. Users can also 
                 find out more information about movies, directors, and genres. Movie list provided from a list of 
                 movies generated from a self-built API.</p>
+                <h5>Technologies</h5>
+                <p className="project-detail">React, SASS, Bootstrap</p>
             </div>
 			<div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/myFlix-client">
@@ -56,6 +58,8 @@ const Portfolio = () => {
                 </h4>
                 <p className="project-detail">A Pokedex App built with JavaScript that uses an external Pokemon API to gather information about the first 150 Pokemon.
                 Users can find out more information about a Pokemon and search for a particular Pokemon.</p>
+                <h5>Technologies</h5>
+                <p className="project-detail">HTML, CSS, JavaScript, jQuery, Bootstrap</p>
                 </div>
             <div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/pokemon-app">
@@ -79,6 +83,8 @@ const Portfolio = () => {
                     developed using a test-driven development technique in React. 
                     The app uses the Google Calendar API to fetch upcoming events, as well as Google Authentication to log in. 
                     Users can filter events based on location and/or number of events.</p>
+                <h5>Technologies</h5>
+                <p className="project-detail">React, AWS Lambda, Google Authentication</p>
             </div>
 			<div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/meet">

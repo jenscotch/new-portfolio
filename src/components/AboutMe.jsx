@@ -30,7 +30,7 @@ const AboutMe = () => {
                     <b>My name is Jennifer Scott.</b> <br/><br/>
                     I am a Full Stack Web Developer with professional design experience.
                     With my focus being on the front end, I am passionate about coding visually pleasing and user-friendly sites/apps.
-                    I have a strong foundating in <b>HTML, CSS, & Javascript</b>, as well as experience with various back end technologies. 
+                    I have a strong foundation in <b>HTML, CSS, & Javascript</b>, as well as experience with various back end technologies. 
                     <br/><br/>
                     <a className="btn" href="https://github.com/jenscotch" style={{fontSize: "18px"}}>Github</a>
                     <a className="btn" href={resume} style={{fontSize: "18px"}}>Resume</a>
