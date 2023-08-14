@@ -39,7 +39,7 @@ const AboutMe = () => {
             </div>
         </div>
 
-        <div className="flex h-full fade-in skills">
+        <div className="flex h-full fade-in">
             <div >
             <div className="bg">
                 <i className="devicon-angularjs-plain" alt="Angular" title="Angular"></i>

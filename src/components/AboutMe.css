@@ -18,8 +18,7 @@
 }
 
 i {
-    display: block;
-    float: left;
+    display: inline-block;
     font-size: 100px;
     margin: 10px;
 }
