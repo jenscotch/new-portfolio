@@ -35,6 +35,7 @@ const AboutMe = () => {
                     <a className="btn" href="https://github.com/jenscotch" style={{fontSize: "18px"}}>Github</a>
                     <a className="btn" href={resume} style={{fontSize: "18px"}}>Resume</a>
                     <a className="btn" href="mailto:jennifer.scott9@yahoo.com" style={{fontSize: "18px"}}>Email</a>
+                    <a className="btn" href="https://jenniferlaniscott.squarespace.com" style={{fontSize: "18px"}}>Design</a>
                 </h5>
             </div>
         </div>
