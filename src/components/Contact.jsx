@@ -60,6 +60,8 @@ const Contact = () => {
                 <button className="btn" style={{backgroundColor: "#b45596d1", color: "#fff"}} type="submit">
                     {formStatus}
                 </button>
+                <br/>
+                <br/>
             </form>
         </div>
     )

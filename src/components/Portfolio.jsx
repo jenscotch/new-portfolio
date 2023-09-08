@@ -3,6 +3,7 @@ import './Portfolio.css';
 import movie from '../assets/movie-app.png';
 import pokemon from '../assets/pokemon.png';
 import meet from '../assets/meet.png';
+import study from '../assets/case-study.pdf';
 
 
 function reveal() {
@@ -85,6 +86,7 @@ const Portfolio = () => {
                     Users can filter events based on location and/or number of events.</p>
                 <h5>Technologies</h5>
                 <p className="project-detail">React, AWS Lambda, Google Authentication</p>
+                <a className="btn" href={study} style={{fontSize: "16px"}}>CASE STUDY</a>
             </div>
 			<div className="project-image-wrapper">
                 <a href="https://github.com/jenscotch/meet">
