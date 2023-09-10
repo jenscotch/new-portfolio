@@ -71,7 +71,7 @@ function App() {
                     <a href= "https://github.com/jenscotch">
                         <img src={Github} alt="Github" />
                     </a>
-                    <a href="https://www.linkedin.com/in/jennifer-scott-84543a1b6/">
+                    <a href="https://www.linkedin.com/in/jennifer-lani-scott">
                         <img src={LinkedIn} alt="LinkedIn" />
                     </a>
             </p>
