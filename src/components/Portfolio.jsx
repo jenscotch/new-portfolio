@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import movie from '../assets/movie-app.png';
-import pokemon from '../assets/pokemon.png';
+import chat from '../assets/chat.png';
 import meet from '../assets/meet.png';
 import study from '../assets/case-study.pdf';
 
@@ -55,16 +55,16 @@ const Portfolio = () => {
             <div className="project-wrapper">
                 <div className="project-body">
                 <h4 className="project-name">
-                    <a className="btn" alt="project button" href="https://jenscotch.github.io/pokemon-app/" style={{fontSize: "24px", fontWeight: "bold"}}>Pokedex App</a>
+                    <a className="btn" alt="project button" href="https://github.com/jenscotch/chat-app" style={{fontSize: "24px", fontWeight: "bold"}}>Chat App</a>
                 </h4>
-                <p className="project-detail">A Pokedex App built with JavaScript that uses an external Pokemon API to gather information about the first 150 Pokemon.
-                Users can find out more information about a Pokemon and search for a particular Pokemon.</p>
+                <p className="project-detail">A Chat App built with React Native that uses Google Firestore to store chat details.
+                Users have the ability to share images and their location once in the chat.</p>
                 <h5>Technologies</h5>
-                <p className="project-detail">HTML, CSS, JavaScript, jQuery, Bootstrap</p>
+                <p className="project-detail">React Native, Google Firestore Database, Expo, Android Studio</p>
                 </div>
             <div className="project-image-wrapper">
-                <a href="https://github.com/jenscotch/pokemon-app">
-				    <img className="project-image" src={pokemon} alt="pokemon app"/>
+                <a href="https://github.com/jenscotch/chat-app">
+				    <img className="project-image" src={chat} alt="chat app"/>
                 </a>
             </div>
             </div>
