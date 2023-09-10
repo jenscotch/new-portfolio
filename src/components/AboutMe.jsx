@@ -22,9 +22,9 @@ window.addEventListener('scroll', reveal);
 
 const AboutMe = () => {
     return (
-        <div name="portfolio" className="box" id="about">
+        <div className="box" id="about">
 
-        <div name="home" className="h-screen w-full fade-in">
+        <div className="fade-in">
             <div className="px-4">
                 <h5 className="paragraph">
                     <b>My name is Jennifer Scott.</b> <br/><br/>
@@ -40,7 +40,7 @@ const AboutMe = () => {
             </div>
         </div>
 
-        <div className="flex h-full fade-in">
+        <div className="flex fade-in">
             <div >
             <div className="bg">
                 <i className="devicon-angularjs-plain" alt="Angular" title="Angular"></i>

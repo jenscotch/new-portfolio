@@ -26,7 +26,7 @@ window.addEventListener('scroll', reveal);
 const Portfolio = () => {
 
     return (
-    <div className="project-container fade-in">
+    <div className="project-container fade-in" id="portfolio">
         <div className="project-card">
 		<div className="project-wrapper">
             <div className="project-body">
